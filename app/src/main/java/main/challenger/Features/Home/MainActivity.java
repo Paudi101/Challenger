@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar myToolBar;
     private ViewPager pager;
     private BottomNavigationView navigation;
-    private TextView mTextMessage, toolBarTitle;
+    private TextView toolBarTitle;
     private MainPagerAdapter adapter;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -26,17 +26,14 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
                     toolBarTitle.setText(R.string.title_home);
                     pager.setCurrentItem(0, true);
                     return true;
                 case R.id.navigation_search:
-                    mTextMessage.setText(R.string.title_search);
                     toolBarTitle.setText(R.string.title_search);
                     pager.setCurrentItem(1, true);
                     return true;
                 case R.id.navigation_personal:
-                    mTextMessage.setText(R.string.title_personal);
                     toolBarTitle.setText(R.string.title_personal);
                     pager.setCurrentItem(2, true);
                     return true;
@@ -87,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void getViews(){
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        mTextMessage = (TextView) findViewById(R.id.message);
         myToolBar = (Toolbar) findViewById(R.id.toolbar);
         toolBarTitle = (TextView) myToolBar.findViewById(R.id.toolbar_title);
         pager = (ViewPager) findViewById(R.id.viewPager);
