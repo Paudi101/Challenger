@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageScrolled(int position, float arg1, int arg2) {}
         });
-
     }
 
     public void getViews(){
