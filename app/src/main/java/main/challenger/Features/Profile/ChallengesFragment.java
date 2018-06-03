@@ -1,4 +1,4 @@
-package main.challenger.Features.MyChallenges;
+package main.challenger.Features.Profile;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;

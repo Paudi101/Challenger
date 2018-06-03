@@ -5,7 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
-import main.challenger.Features.MyChallenges.ChallengesFragment;
+import main.challenger.Features.Profile.ChallengesFragment;
+import main.challenger.Features.Profile.ProfileFragment;
 import main.challenger.Features.Search.SearchFragment;
 
 
@@ -20,7 +21,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
         this.context = context;
         fragments.add(new HomeFragment());
         fragments.add(new SearchFragment());
-        fragments.add(new ChallengesFragment());
+        fragments.add(new ProfileFragment());
     }
 
     @Override

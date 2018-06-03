@@ -4,4 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_personal">My Challenges</string>
     <string name="title_search">Search</string>
+    <string name="challenges">CHALLENGES</string>
+    <string name="completed">COMPLETED</string>
+    <string name="failed">FAILED</string>
 </resources>
