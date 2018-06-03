@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
                     toolBarTitle.setText(R.string.title_search);
                     pager.setCurrentItem(1, true);
                     return true;
-                case R.id.navigation_personal:
-                    toolBarTitle.setText(R.string.title_personal);
+                case R.id.navigation_profile:
+                    toolBarTitle.setText(R.string.title_profile);
                     pager.setCurrentItem(2, true);
                     return true;
             }
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         navigation.setSelectedItemId(R.id.navigation_search);
                         break;
                     case 2:
-                        navigation.setSelectedItemId(R.id.navigation_personal);
+                        navigation.setSelectedItemId(R.id.navigation_profile);
                         break;
                 }
             }
